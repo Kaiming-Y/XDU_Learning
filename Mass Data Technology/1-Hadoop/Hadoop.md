@@ -483,15 +483,15 @@ scp -r /opt/hadoop/sbin root@slave02:/opt/hadoop/
 
 1. 主机
 
-   ![jps_master](img\jps_master.png)
+   ![jps_master](img\jpsmaster.png)
 
 2. 从机1
 
-   ![jps_slave01](img\jps_slave01.png)
+   ![jps_slave01](img\jpsslave01.png)
 
 3. 从机2
 
-   ![jps_slave02](img\jps_slave02.png)
+   ![jps_slave02](img\jpsslave02.png)
 
 从JPS显示的进程可以看出Hadoop已经成功启动，并且是符合集群规划的
 
