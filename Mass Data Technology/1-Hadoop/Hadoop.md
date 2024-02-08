@@ -121,7 +121,7 @@
 
 #### 5.1 免密登录原理
 
-![ssh_theory](img\ssh_theory.png)
+![ssh_theory](img/ssh_theory.png)
 
 #### 5.2 设置无密钥访问
 
@@ -425,7 +425,7 @@ scp -r /opt/hadoop/sbin root@slave02:/opt/hadoop/
 
 打开端口9000、8088和50070
 
-![port](img\port.png)
+![port](img/port.png)
 
 ### 8 格式化NameNode并启动Hadoop
 
@@ -483,15 +483,15 @@ scp -r /opt/hadoop/sbin root@slave02:/opt/hadoop/
 
 1. 主机
 
-   ![jps_master](img\jpsmaster.png)
+   ![jps_master](img/jpsmaster.png)
 
 2. 从机1
 
-   ![jps_slave01](img\jpsslave01.png)
+   ![jps_slave01](img/jpsslave01.png)
 
 3. 从机2
 
-   ![jps_slave02](img\jpsslave02.png)
+   ![jps_slave02](img/jpsslave02.png)
 
 从JPS显示的进程可以看出Hadoop已经成功启动，并且是符合集群规划的
 
