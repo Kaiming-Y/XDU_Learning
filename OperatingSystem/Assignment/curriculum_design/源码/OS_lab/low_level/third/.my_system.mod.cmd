@@ -1,0 +1,1 @@
+cmd_/home/lumos/OS_lab/low_level/third/my_system.mod := printf '%s\n'   my_system.o | awk '!x[$$0]++ { print("/home/lumos/OS_lab/low_level/third/"$$0) }' > /home/lumos/OS_lab/low_level/third/my_system.mod

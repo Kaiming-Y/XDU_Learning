@@ -1,0 +1,157 @@
+58828 execve("/usr/bin/bash", ["bash", "myfile", "content.txt", "write"], 0x7ffda8d5be80 /* 47 vars */) = 0
+58828 brk(NULL)                         = 0x55ecd09ed000
+58828 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd10f97a10) = -1 EINVAL (无效的参数)
+58828 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f41faced000
+58828 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (没有那个文件或目录)
+58828 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+58828 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=57347, ...}, AT_EMPTY_PATH) = 0
+58828 mmap(NULL, 57347, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f41facde000
+58828 close(3)                          = 0
+58828 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+58828 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+58828 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+58828 mmap(NULL, 203040, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41facac000
+58828 mmap(0x7f41facba000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f41facba000
+58828 mmap(0x7f41faccb000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f41faccb000
+58828 mmap(0x7f41facd9000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7f41facd9000
+58828 close(3)                          = 0
+58828 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+58828 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+58828 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+58828 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+58828 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0i8\235HZ\227\223\333\350s\360\352,\223\340."..., 68, 896) = 68
+58828 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+58828 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+58828 mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41faa00000
+58828 mmap(0x7f41faa28000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f41faa28000
+58828 mmap(0x7f41fabbd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f41fabbd000
+58828 mmap(0x7f41fac15000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f41fac15000
+58828 mmap(0x7f41fac1b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f41fac1b000
+58828 close(3)                          = 0
+58828 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f41faca9000
+58828 arch_prctl(ARCH_SET_FS, 0x7f41faca9740) = 0
+58828 set_tid_address(0x7f41faca9a10)   = 58828
+58828 set_robust_list(0x7f41faca9a20, 24) = 0
+58828 rseq(0x7f41facaa0e0, 0x20, 0, 0x53053053) = 0
+58828 mprotect(0x7f41fac15000, 16384, PROT_READ) = 0
+58828 mprotect(0x7f41facd9000, 16384, PROT_READ) = 0
+58828 mprotect(0x55ecceb00000, 16384, PROT_READ) = 0
+58828 mprotect(0x7f41fad27000, 8192, PROT_READ) = 0
+58828 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+58828 munmap(0x7f41facde000, 57347)     = 0
+58828 openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = 3
+58828 close(3)                          = 0
+58828 getrandom("\xe3\x34\xf2\x44\x16\x76\x11\x5b", 8, GRND_NONBLOCK) = 8
+58828 brk(NULL)                         = 0x55ecd09ed000
+58828 brk(0x55ecd0a0e000)               = 0x55ecd0a0e000
+58828 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+58828 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14575936, ...}, AT_EMPTY_PATH) = 0
+58828 mmap(NULL, 14575936, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f41f9c00000
+58828 close(3)                          = 0
+58828 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+58828 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+58828 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7f41face6000
+58828 close(3)                          = 0
+58828 futex(0x7f41fac1aa6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+58828 getuid()                          = 1000
+58828 getgid()                          = 1000
+58828 geteuid()                         = 1000
+58828 getegid()                         = 1000
+58828 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+58828 ioctl(-1, TIOCGPGRP, 0x7ffd10f97904) = -1 EBADF (错误的文件描述符)
+58828 sysinfo({uptime=4571, loads=[11936, 11872, 11744], totalram=4077707264, freeram=385953792, sharedram=122466304, bufferram=49930240, totalswap=4087345152, freeswap=3978723328, procs=560, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+58828 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+58828 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+58828 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+58828 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+58828 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+58828 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+58828 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+58828 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 uname({sysname="Linux", nodename="Lumos-virtual-machine", ...}) = 0
+58828 newfstatat(AT_FDCWD, "/home/lumos/OS_lab/low_level/first", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/home/lumos", {st_mode=S_IFDIR|0750, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/home/lumos/OS_lab", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/home/lumos/OS_lab/low_level", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/home/lumos/OS_lab/low_level/first", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+58828 getpid()                          = 58828
+58828 getppid()                         = 58825
+58828 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/usr/local/sbin/bash", 0x7ffd10f97540, 0) = -1 ENOENT (没有那个文件或目录)
+58828 newfstatat(AT_FDCWD, "/usr/local/bin/bash", 0x7ffd10f97540, 0) = -1 ENOENT (没有那个文件或目录)
+58828 newfstatat(AT_FDCWD, "/usr/sbin/bash", 0x7ffd10f97540, 0) = -1 ENOENT (没有那个文件或目录)
+58828 newfstatat(AT_FDCWD, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1396520, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1396520, ...}, 0) = 0
+58828 geteuid()                         = 1000
+58828 getegid()                         = 1000
+58828 getuid()                          = 1000
+58828 getgid()                          = 1000
+58828 access("/usr/bin/bash", X_OK)     = 0
+58828 newfstatat(AT_FDCWD, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1396520, ...}, 0) = 0
+58828 geteuid()                         = 1000
+58828 getegid()                         = 1000
+58828 getuid()                          = 1000
+58828 getgid()                          = 1000
+58828 access("/usr/bin/bash", R_OK)     = 0
+58828 newfstatat(AT_FDCWD, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1396520, ...}, 0) = 0
+58828 newfstatat(AT_FDCWD, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1396520, ...}, 0) = 0
+58828 geteuid()                         = 1000
+58828 getegid()                         = 1000
+58828 getuid()                          = 1000
+58828 getgid()                          = 1000
+58828 access("/usr/bin/bash", X_OK)     = 0
+58828 newfstatat(AT_FDCWD, "/usr/bin/bash", {st_mode=S_IFREG|0755, st_size=1396520, ...}, 0) = 0
+58828 geteuid()                         = 1000
+58828 getegid()                         = 1000
+58828 getuid()                          = 1000
+58828 getgid()                          = 1000
+58828 access("/usr/bin/bash", R_OK)     = 0
+58828 getpid()                          = 58828
+58828 getppid()                         = 58825
+58828 getpid()                          = 58828
+58828 getppid()                         = 58825
+58828 getpgrp()                         = 58825
+58828 ioctl(2, TIOCGPGRP, [58825])      = 0
+58828 rt_sigaction(SIGCHLD, {sa_handler=0x55eccea15d10, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f41faa42520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f41faa42520}, 8) = 0
+58828 prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=15251, rlim_max=15251}) = 0
+58828 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+58828 openat(AT_FDCWD, "myfile", O_RDONLY) = 3
+58828 newfstatat(AT_FDCWD, "myfile", {st_mode=S_IFREG|0775, st_size=198, ...}, 0) = 0
+58828 ioctl(3, TCGETS, 0x7ffd10f978a0)  = -1 ENOTTY (对设备不适当的 ioctl 操作)
+58828 lseek(3, 0, SEEK_CUR)             = 0
+58828 read(3, "#!/bin/bash\n# @author lumos\nfile"..., 80) = 80
+58828 lseek(3, 0, SEEK_SET)             = 0
+58828 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+58828 fcntl(255, F_GETFD)               = -1 EBADF (错误的文件描述符)
+58828 dup2(3, 255)                      = 255
+58828 close(3)                          = 0
+58828 fcntl(255, F_SETFD, FD_CLOEXEC)   = 0
+58828 fcntl(255, F_GETFL)               = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+58828 newfstatat(255, "", {st_mode=S_IFREG|0775, st_size=198, ...}, AT_EMPTY_PATH) = 0
+58828 lseek(255, 0, SEEK_CUR)           = 0
+58828 read(255, "#!/bin/bash\n# @author lumos\nfile"..., 198) = 198
+58828 openat(AT_FDCWD, "content.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+58828 fcntl(1, F_GETFD)                 = 0
+58828 fcntl(1, F_DUPFD, 10)             = 10
+58828 fcntl(1, F_GETFD)                 = 0
+58828 fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+58828 dup2(3, 1)                        = 1
+58828 close(3)                          = 0
+58828 newfstatat(1, "", {st_mode=S_IFREG|0664, st_size=0, ...}, AT_EMPTY_PATH) = 0
+58828 write(1, "817MYFILE\n", 10)       = 10
+58828 dup2(10, 1)                       = 1
+58828 fcntl(10, F_GETFD)                = 0x1 (flags FD_CLOEXEC)
+58828 close(10)                         = 0
+58828 read(255, "", 198)                = 0
+58828 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+58828 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+58828 exit_group(0)                     = ?
+58828 +++ exited with 0 +++

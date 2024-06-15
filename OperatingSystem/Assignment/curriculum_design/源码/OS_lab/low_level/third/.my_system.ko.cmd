@@ -1,0 +1,1 @@
+cmd_/home/lumos/OS_lab/low_level/third/my_system.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/lumos/OS_lab/low_level/third/my_system.ko /home/lumos/OS_lab/low_level/third/my_system.o /home/lumos/OS_lab/low_level/third/my_system.mod.o;  true

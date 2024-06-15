@@ -1,0 +1,3 @@
+// library.h
+
+void sayHello();

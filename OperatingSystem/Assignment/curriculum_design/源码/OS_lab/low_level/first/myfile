@@ -1,0 +1,15 @@
+#!/bin/bash
+# @author lumos
+filename=$1
+limit=$2
+content="817MYFILE"
+if [ $limit == "read" ]
+then 
+	cat ${filename} | while read line
+do 
+	echo ${line}
+done 
+else
+	echo "${content}">${filename}
+fi
+
