@@ -1,0 +1,82 @@
+%%% 编译：XeLaTex. 
+\documentclass[a4paper,UTF8]{article}
+\usepackage{ctex}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{bm}
+\usepackage{hyperref}
+\numberwithin{equation}{section}
+%\usepackage[thmmarks, amsmath, thref]{ntheorem}
+\theoremstyle{definition}
+\newtheorem*{solution}{解答}
+\newtheorem*{prove}{Proof}
+\newcommand{\indep}{\rotatebox[origin=c]{90}{$\models$}}
+
+\usepackage{multirow}
+
+%--
+
+%--
+\begin{document}
+\title{机器学习与数据挖掘- 第三次作业\\ 选取最优划分准则构造决策树}
+\author{学号：xxxxxx, 姓名：xxxx, 邮箱：xxxxxx@xxxxx.com}
+\maketitle
+
+\section{决策树-信息增益准则}
+\begin{enumerate}[\textbf{题目 1:}] % {(}1{)}
+\item 考虑下面的训练集：共计6个训练样本，每个训练样本有三个维度的特征属性和标记信息。详细信息如表1所示。
+
+请通过训练集中的数据训练一棵决策树，要求通过“信息增益”(information gain)为准则来选择划分属性。请参考《机器学习》（周志华）书中图4.4，给出详细的计算过程并画出最终的决策树。
+
+\begin{table}[htb]   
+	\begin{center}   
+		\caption{训练集信息}  
+		\label{table:1} 
+		\begin{tabular}{|c|c|c|c|c|} \hline   
+\text{序号}  &  \text{特征 A}  & \text{特征 B}   & \text{特征 C}  &  \text{标记}  \\ \hline  
+1  & 0 & 1 & 1  &0  \\ \hline
+2  & 1 & 1 & 1  &0  \\ \hline
+3  & 0 & 0 & 0  &0  \\ \hline
+4  & 1 & 1 & 0  &1  \\ \hline
+5  & 0 & 1 & 0  &1  \\ \hline
+6  & 1 & 0 & 1  &1  \\ \hline
+		\end{tabular}   
+	\end{center}   
+\end{table}
+\end{enumerate}
+
+%%%%%%%%%%%%  以下是解答  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+此处用于写解答(中英文均可)\\
+(1) xxxxxxxxx。\\
+(2) xxxxxxxxx。\\
+\end{solution}
+
+
+
+\begin{enumerate}[\textbf{题目 2:}] % {(}1{)}
+\item 模仿给出算法ID3的程序，实现算法C4.5在西瓜数据集2.0上训练的程序，给出训练完成后得到的决策树，并且给出在两个测试样本$test\_data\_1$ 和$test\_data\_2$ 上的分类预测结果。\\
+$test\_data\_1$ = $\{$'色泽': '青绿', '根蒂': '蜷缩', '敲声': '浊响', '纹理': '稍糊', '脐部': '凹陷', '触感': '硬滑'$\}$\\
+$test\_data\_2 $= $\{$'色泽': '乌黑', '根蒂': '稍蜷', '敲声': '浊响', '纹理': '清晰', '脐部': '凹陷', '触感': '硬滑'$\}$
+\end{enumerate}
+
+
+%%%%%%%%%%%%  以下是解答  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{solution}
+此处用于写解答(中英文均可)\\
+(1) xxxxxxxxx。\\
+(2) xxxxxxxxx。\\
+\end{solution}
+
+
+%\begin{prove}
+%此处用于写证明(中英文均可)
+%\end{prove}
+
+
+\end{document}

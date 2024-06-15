@@ -1,0 +1,4 @@
+
+Texmaker、TeXworks、TeXstudio三者都可以编译LaTex文件，初学者或者处理本课程作业，前两者软件即可。编译时选择 XeLaTex
+
+初学者：Texmaker > TeXworks > TeXstudio
