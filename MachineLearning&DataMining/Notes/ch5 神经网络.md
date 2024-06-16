@@ -539,7 +539,7 @@ $$
 
 <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530144009.png" style="zoom:67%;" />
 
-### 2 相同得模式出现在图像得不同区域
+### 2 相同的模式出现在图像得不同区域
 
 可使用相同的检测器（滤波），共享相同的参数
 

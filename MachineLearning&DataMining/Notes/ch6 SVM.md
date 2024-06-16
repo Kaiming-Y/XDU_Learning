@@ -157,7 +157,7 @@ $$
 通过求解上述模型中的 $ \mathbf{w}, b $，就可以获得划分超平面，也是支持向量机的原始形式：
 
 $$
-\min_{\mathbf{w}, b} \frac{1}{\|\mathbf{w}\|^2_2} \quad \text{s.t.} \quad y_i (\mathbf{w}^T \mathbf{x}_i + b) \geq 1, \quad i = 1, 2, \ldots, m
+\min_{\mathbf{w}, b} \|\mathbf{w}\|^2_2 \quad \text{s.t.} \quad y_i (\mathbf{w}^T \mathbf{x}_i + b) \geq 1, \quad i = 1, 2, \ldots, m
 $$
 因为现在的目标函数是二次的，约束条件是线性的，所以它是一个凸二次规划问题 (convex quadratic programming)。可以直接用一些二次规划优化软件计算包来求解（如 CVX），但该问题可以有更为高效的求解方法。
 
@@ -169,7 +169,7 @@ $$
 
 2. 构造并求解凸二次规划
 $$
-\min_{\mathbf{w}, b} \frac{1}{ \|\mathbf{w}\|^2_2 } \quad \text{s.t.} \quad y_i (\mathbf{w}^T \mathbf{x}_i + b) \ge 1, \quad i = 1, 2, \ldots, m
+\min_{\mathbf{w}, b} \|\mathbf{w}\|^2_2 \quad \text{s.t.} \quad y_i (\mathbf{w}^T \mathbf{x}_i + b) \ge 1, \quad i = 1, 2, \ldots, m
 $$
   求得解 $\mathbf{w}^*, b^*$
 
@@ -359,7 +359,7 @@ $$
 
 4. 方便核函数的引入，进而推广到非线性分类问题。
 
-### 2  完整的线性可分支撑向量分类即算法流程
+### 2  完整的线性可分支撑向量分类的算法流程
 
 1. 设已知训练集 $\mathbf{D} = \{(x_1, y_1), (x_2, y_2), \ldots, (x_m, y_m)\}$，其中 $x_i \in \mathbb{R}^d$，$y_i \in \mathcal{Y} = \{1, -1\}$，$i = 1, 2, \ldots, m$
 
