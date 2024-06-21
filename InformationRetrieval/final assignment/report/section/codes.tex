@@ -1,0 +1,196 @@
+\section{代码实现}
+
+\subsection{基于CNN的中文情感分析}
+以下是代码实现的主要文件及设计思路描述：
+
+\begin{itemize}
+    \item main.py: 包含了数据处理、模型构建和训练的逻辑。从数据源加载并预处理数据，使用jieba进行中文分词，生成适合模型训练的数据格式。定义了输入函数(input\_fn)和模型函数(model\_fn)，构建了一个基于CNN的文本分类模型。使用AdamOptimizer进行模型训练，并计算损失函数和评估指标。
+    \item export.py: 通过Estimator.export\_saved\_model将训练好的模型导出,以便后续部署使用。
+    \item serve.py: 加载导出的模型，并提供预测服务功能。
+    \item debug.py: 用于调试数据输入和模型调用，方便开发时的调试工作。启用了eager\_execution，可以逐步执行代码并查看各个步骤的输出结果。
+\end{itemize}
+
+下面仅对main.py中的基于CNN的模型训练部分的核心内容进行分析：
+
+\subsubsection{检查features类型}
+
+    \begin{lstlisting}
+if isinstance(features, dict): 
+    features = features['words']\end{lstlisting}
+
+如果是字典，则从中提取键为'words'的值，将其赋给features。这种结构的设计可能是为了支持不同类型的输入数据。
+
+\subsubsection{定义词嵌入层}
+
+    \begin{lstlisting}
+# Word Embedding
+embedding_size = 100
+embeddings = tf.get_variable('embedding', [vocab_size, embedding_size])
+embed = tf.nn.embedding_lookup(embeddings, input_x)
+embed_expanded = tf.expand_dims(embed, -1)\end{lstlisting}
+\begin{itemize}
+    \item embedding\_size表示嵌入向量的维度。
+    \item tf.get\_variable用来获取或创建名为'embedding'的变量，其形状为[vocab\_size, embedding\_size]，表示单词表大小为vocab\_size，每个单词的嵌入向量embedding\_size维。
+    \item tf.nn.embedding\_lookup将输入的词汇索引input\_x查找并获取对应的嵌入向量。
+    \item tf.expand\_dims(embed, -1)在最后一个维度（-1表示最后一个维度）上增加一个维度，用于后续卷积操作。
+\end{itemize}
+
+\subsubsection{定义卷积神经网络}
+
+首先定义卷积和池化层：
+
+\begin{lstlisting}
+pooled_outputs = []
+for i, filter_size in enumerate(params['filter_sizes']):
+    conv2 = tf.layers.conv2d(embeddings_expanded, params['num_filters'], kernel_size=[filter_size, params['dim']],
+                             activation=tf.nn.relu, name='conv-{}'.format(i))
+    pooled = tf.layers.max_pooling2d(inputs=conv2, pool_size=[params['nwords'] - filter_size + 1, 1],
+                                     strides=[1, 1], name='pool-{}'.format(i))
+    pooled_outputs.append(pooled)\end{lstlisting}
+
+\begin{itemize}
+    \item 卷积层 (conv2d)：在循环中，对每个指定大小的卷积核 (filter\_size)，使用 tf.layers.conv2d 创建一个卷积层。这一层会对输入图像或特征图进行卷积操作，并使用 ReLU 激活函数。
+    \item 池化层 (max\_pooling2d)：紧接着卷积层，应用最大池化操作。这里的池化窗口大小是 $[params['nwords'] - filter_size + 1, 1]$，指定了在空间维度上的窗口大小和步幅。最大池化有助于提取特征并减少维度。
+    \item     每个卷积核大小对应的卷积层和池化层结果都被添加到 pooled\_outputs 列表中。
+\end{itemize}
+
+\subsubsection{定义全连接层和输出}
+
+\begin{lstlisting}
+num_total_filters = params['num_filters'] * len(params['filter_sizes'])
+h_pool = tf.concat(pooled_outputs, 3)
+output = tf.reshape(h_pool, [-1, num_total_filters])
+output = tf.layers.dropout(output, rate=dropout, training=training)
+logits = tf.layers.dense(output, num_tags)
+pred_ids = tf.argmax(input=logits, axis=1)\end{lstlisting}
+
+\begin{itemize}
+    \item 计算出所有卷积核的总数后,将所有池化层的结果在深度维度上连接成一个特征向量 h\_pool。然后将这个特征向量调整为二维张量以适应全连接层的输入。
+    \item 添加了一个dropout 步骤，通过在训练过程中随机丢弃部分节点来防止过拟合。
+    \item 通过一个全连接层 (dense)，将特征向量映射到输出大小为 num\_tags 的 logits 张量，然后取最大值的索引作为预测标签的 pred\_ids。
+\end{itemize}
+
+\subsubsection{预测}
+
+如果在预测模式,模型不需要计算损失或优化参数，只需生成预测结果。
+
+\begin{lstlisting}
+if mode == tf.estimator.ModeKeys.PREDICT:
+    reversed_tags = tf.contrib.lookup.index_to_string_table_from_file(params['tags'])
+    pred_labels = reversed_tags.lookup(tf.argmax(input=logits, axis=1))
+    predictions = {
+        'classes_id': pred_ids,
+        'labels': pred_labels
+    }
+    return tf.estimator.EstimatorSpec(mode, predictions=predictions)\end{lstlisting}
+
+\begin{itemize}
+    \item 将输出的 logits 转为标签名称：首先使用一个反转的索引表 (index\_to\_string\_table\_from\_file) 将模型输出的类别索引转为标签名称。
+    \item 创建一个预测字典 predictions，其中包含处理过的预测类别索引 classes\_id 和对应的标签 labels。
+    \item 返回一个包含预测模式和预测结果的 EstimatorSpec 对象，该对象可用于进行预测工作。
+\end{itemize}
+
+在非预测模式下，需要计算损失并评估模型性能。
+
+\begin{lstlisting}
+else:
+    # LOSS
+    tags_table = tf.contrib.lookup.index_table_from_file(params['tags'])
+    tags = tags_table.lookup(labels)
+    loss = tf.losses.sparse_softmax_cross_entropy(labels=tags, logits=logits)
+    # Metrics
+    metrics = {
+        'acc': tf.metrics.accuracy(tags, pred_ids),
+        'precision': tf.metrics.precision(tags, pred_ids),
+        'recall': tf.metrics.recall(tags, pred_ids)
+    for metric_name, op in metrics.items():
+        tf.summary.scalar(metric_name, op[1])
+    }\end{lstlisting}
+
+\begin{itemize}
+    \item 首先使用交叉熵损失函数 (sparse\_softmax\_cross\_entropy) 计算真实标签和模型输出 logits 之间的损失。
+    \item 计算训练和评估过程中的准确率 (accuracy)、精确度 (precision) 和召回率 (recall) 指标。为了方便监控指标，在 TensorBoard 中记录了这些指标。
+\end{itemize}
+
+在训练模式下，定义优化器 (这里使用 Adam 优化器) 来最小化损失，并更新模型的参数。
+
+\begin{lstlisting}
+if mode == tf.estimator.ModeKeys.TRAIN:
+        train_op = tf.train.AdamOptimizer().minimize(
+            loss, global_step=tf.train.get_or_create_global_step())
+        return tf.estimator.EstimatorSpec(mode, loss=loss, train_op=train_op)
+\end{lstlisting}
+
+在评估模式下，返回一个包含损失和评估指标的 EstimatorSpec 对象，用于评估模型性能。
+
+\begin{lstlisting}
+elif mode == tf.estimator.ModeKeys.EVAL:
+        return tf.estimator.EstimatorSpec(
+            mode, loss=loss, eval_metric_ops=metrics)
+\end{lstlisting}
+
+\subsection{基于BI-LSTM的中文情感分析}
+
+基于BI-LSTM的代码实现的文件与基于CNN的一致，再此不再赘述，只分析与CNN不同的模型训练部分的代码如下。
+
+\subsubsection{数据准备和转置}
+
+\begin{lstlisting}
+t = tf.transpose(embeddings, perm=[1, 0, 2])\end{lstlisting}
+
+将输入的嵌入矩阵进行转置，以便与 LSTM 模型的输入格式相匹配。
+
+\subsubsection{LSTM 单元初始化}
+
+进行前向和后向 LSTM 单元初始化。
+
+\begin{lstlisting}
+lstm_cell_fw = tf.contrib.rnn.LSTMBlockFusedCell(params['lstm_size'])\end{lstlisting}
+
+创建前向 LSTM 单元，该单元的大小由参数 lstm\_size 指定。
+
+\begin{lstlisting}
+lstm_cell_bw = tf.contrib.rnn.LSTMBlockFusedCell(params['lstm_size'])\end{lstlisting}
+
+创建后向 LSTM 单元，同样使用相同大小的 LSTM 单元。
+
+\begin{lstlisting}
+lstm_cell_bw = tf.contrib.rnn.TimeReversedFusedRNN(lstm_cell_bw)\end{lstlisting}
+
+对后向 LSTM 单元进行时间反转，以便正确处理后向序列的输入。
+
+
+\subsubsection{双向 LSTM 运算}
+
+前向 LSTM 运算：
+
+\begin{lstlisting}
+_, (cf, hf) = lstm_cell_fw(t, dtype=tf.float32, sequence_length=nwords)\end{lstlisting}
+
+通过前向 LSTM 单元处理转置后的输入序列 t，获取前向 LSTM 单元的最终状态 hf 和细胞状态 cf。
+
+后向 LSTM 运算：
+
+\begin{lstlisting}
+_, (cb, hb) = lstm_cell_bw(t, dtype=tf.float32, sequence_length=nwords)\end{lstlisting}
+
+通过后向 LSTM 单元处理转置后的输入序列 t，获取后向 LSTM 单元的最终状态 hb 和细胞状态 cb。
+
+\subsubsection{LSTM 输出拼接}
+
+拼接前向和后向 LSTM 输出：
+
+\begin{lstlisting}
+output = tf.concat([hf, hb], axis=-1)\end{lstlisting}
+
+将前向和后向 LSTM 单元的最终状态连接在一起，形成最终的双向 LSTM 输出，捕获了序列双向信息。
+
+
+\subsubsection{应用丢弃率和训练模式}
+
+使用丢弃率 dropout 对双向 LSTM 输出进行丢弃操作，以减少过拟合风险：
+
+\begin{lstlisting}
+output = tf.layers.dropout(output, rate=dropout, training=training)\end{lstlisting}
+
+这里根据是否处于训练模式 training 调整丢弃率操作。

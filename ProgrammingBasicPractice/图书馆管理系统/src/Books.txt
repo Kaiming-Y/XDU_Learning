@@ -1,0 +1,13 @@
+Thinking in Java:40
+C Prime Plus:11
+PythonProgramming:10
+Data Structure and Algorithm Analysis:8
+Discrete Mathematics:5
+Linear Algebra:8
+Probability Theory and Statistics:12
+College Physics:9
+Designing Data-Intensive Applications:11
+Effective STL:3
+UNIX Networking Programming:15
+NEWBOOK:20
+end
