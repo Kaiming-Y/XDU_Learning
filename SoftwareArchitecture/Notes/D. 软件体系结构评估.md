@@ -91,7 +91,7 @@
 
 ### 评估阶段
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612194151.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612194151.png" style="zoom:80%;" />
 
 #### 阶段 0
 
@@ -181,7 +181,7 @@
 
 主要涉及为客户制作**最终报告**以及反思评估和 ATAM 材料的质量
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612202324.png" style="zoom: 60%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612202324.png" style="zoom: 60%;" />
 
 
 
@@ -209,7 +209,7 @@
 
 效用树是一个**自顶向下**的工具，用来刻画重要的需求。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612195420.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612195420.png"/>
 
 - 驱动**质量属性**是高级节点（通常是性能、可修改性、安全性和可用性）
 - **场景**是效用树的叶子。

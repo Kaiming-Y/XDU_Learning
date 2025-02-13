@@ -77,7 +77,7 @@
 
 ## 簇 Cluster
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601171229.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601171229.png" style="zoom:50%;" />
 
 - 期望聚类后不同**簇间**的样本距离要**越远越好**，同一**簇内**的样本距离**越近越好**
 
@@ -146,7 +146,7 @@ $$
 4. 重新将每个数据点划分到离其最近的类中心所在的类，使得SSE减少。完成后重新计算各类的中心$c_{i}$，$i = 1, \ldots, K$;
 5. 重复3和4，直到没有样本点需要调整（即SSE不能再减少）;
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601173937.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601173937.png" style="zoom:50%;" />
 
 ### 总结
 
@@ -185,7 +185,7 @@ $$
 - 树状图 (dendrogram)
 - 嵌套簇图 (nested cluster diagram)
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601201140.png" style="zoom:60%;" /><img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601201205.png" style="zoom:60%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601201140.png" style="zoom:60%;" /><img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601201205.png" style="zoom:60%;" />
 
 ### 凝聚方法
 
@@ -208,7 +208,7 @@ $$
 
 如果两个点之间的邻近度度量是**相似度**，则**值越大表示点越接近(单链“大中取大”，全链“小中取大”) 。**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601204237.png" style="zoom: 25%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601204237.png" style="zoom: 25%;" />
 
 ### 单链和全链层次聚类步骤
 
@@ -237,13 +237,13 @@ $$
 
 #### 单链层次聚类
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601210252.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601210252.png" style="zoom:50%;" />
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601210307.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601210307.png" style="zoom:50%;" />
 
 #### 全链层次聚类
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601210351.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601210351.png" style="zoom:50%;" />
 
 
 
@@ -266,7 +266,7 @@ $$
 - **边界点** (Border point, 稠密区域边缘上的点)：边界点不是核心点，但它落在某个核心点的邻域内。边界点可能落在多个核心点的邻域内。
 - **噪声点**或**背景点** (Noise point, 稀疏区域中的点)：噪声点是即非核心点也非边界点的任何点。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601211501.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601211501.png" style="zoom:50%;" />
 
 #### 3 重要参数与相关定义
 
@@ -283,7 +283,7 @@ DBSCAN中的几个定义：
 - **密度可达**: 对于样本集合 $D$，给定一串样本点 $p_1, p_2, \ldots, p_n$，$p=p_1, q=p_n$，假定样本 $p_i$ 从 $p_{i-1}$ 直接密度可达，那么点 $q$ 从点 $p$ 密度可达。
 - **密度相连**: 对于样本集合 $D$ 中的任意一点 $o$，如果存在点 $p$ 到点 $o$ 密度可达，并且点 $q$ 到点 $o$ 密度可达，那么点 $q$ 到点 $p$ 密度相连。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601212430.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601212430.png" style="zoom:50%;" />
 
 ### DBSCAN 算法
 

@@ -43,7 +43,7 @@
 - 使得边界点距离分类超平面最大，这个方法就是**支持向量机 (SVM)**
 - SVM 就是寻找一个最优的决策边界，距离两个类别最近的样本最远，其中最近的样本点称为**支持向量**。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531143024.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531143024.png" style="zoom:50%;" />
 
 
 
@@ -52,7 +52,7 @@
 - **间隔（margin）**是指从分类超平面到最接近它的训练样本之间的距离。
 - 转化成数学问题， 就是使得中间的直线距离两边的直线的间隔（margin） 最大（这两边的直线的斜率是一样的） ， 即SVM算法就是 **最大化间隔 (margin)**。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531143510.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531143510.png" style="zoom: 50%;" />
 
 
 
@@ -150,7 +150,7 @@ $$
 $$
 y_i (\mathbf{w}^T \mathbf{x}_i + b) \ge 1
 $$
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531150714.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531150714.png" style="zoom:50%;" />
 
 ### 原始SVM
 
@@ -189,7 +189,7 @@ $$
 
 ## 7 求最大间隔分离超平面的例题
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531151315.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531151315.png" style="zoom: 50%;" />
 
 
 
@@ -258,7 +258,7 @@ $$
 <details>
     <summary>例子</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531165819.png" style="zoom:50%;" />
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531165819.png" style="zoom:50%;" />
     </p>
 </details>
 
@@ -325,7 +325,7 @@ b = \frac{1}{|S|} \sum_{i \in S} \left( \frac{1}{y_i} - \mathbf{w}^T \mathbf{x}_
 $$
 这里 $S \subseteq D$ 为原数据集中所有支持向量组成的子集。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531180035.png" style="zoom: 60%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531180035.png" style="zoom: 60%;" />
 
 
 
@@ -396,7 +396,7 @@ $$
 
 ## I. 核支持向量机
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531202436.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531202436.png" style="zoom: 50%;" />
 
 
 
@@ -497,7 +497,7 @@ $$
 
 ## V. 核函数与内积的转化的例子
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531204316.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531204316.png" style="zoom:50%;" />
 
 
 

@@ -24,7 +24,7 @@
 
 ## I. 可用性 Availability
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174837.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174837.png"/>
 
 ### 含义
 
@@ -39,7 +39,7 @@
   - 可用时间百分比
   - 修复故障所需时间
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612111657.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612111657.png" style="zoom:80%;" />
 
 ### 策略
 
@@ -91,7 +91,7 @@
 
 ## II. 可修改性 Modifiability
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174854.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174854.png"/>
 
 ### 含义
 
@@ -104,7 +104,7 @@
   - 修改所花的人力成本
   - 修改所花的经济成本
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612111742.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612111742.png" style="zoom:80%;" />
 
 ### 策略
 
@@ -148,7 +148,7 @@
 
 ## III. 性能 Performance
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174917.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174917.png"/>
 
 ### 含义
 
@@ -161,7 +161,7 @@
   - 随机的
   - 有特定时间尺度，有规律的
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612113133.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612113133.png" style="zoom:80%;" />
 
 ### 策略
 
@@ -202,7 +202,7 @@
 
 ## IV. 安全性 Security
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174933.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174933.png"/>
 
 ### 含义
 
@@ -215,7 +215,7 @@
   - 保证性
   - 可用性
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612143843.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612143843.png" style="zoom:80%;" />
 
 ### 策略
 
@@ -255,7 +255,7 @@
 
 ## V. 可测试性 Testability
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174945.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174945.png"/>
 
 ### 含义
 
@@ -269,7 +269,7 @@
   - 大型软件项目出现故障，可能导致严重的后果
   - 如果能在体系结构层面提高可测试性，收益巨大
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612144708.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612144708.png" style="zoom:80%;" />
 
 ### 策略
 
@@ -302,13 +302,13 @@
 
 ## VI. 易用性 Usability
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174955.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174955.png"/>
 
 ### 含义
 
 - <u>**关注点**：让用户使用软件的难度降低</u>
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612163440.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612163440.png" style="zoom:80%;" />
 
 ### 策略
 

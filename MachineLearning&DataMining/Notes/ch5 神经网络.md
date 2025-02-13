@@ -12,7 +12,7 @@
 
 ### M-P神经元模型
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529212509.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529212509.png" style="zoom:50%;" />
 
 **输入**：来自其他 $n$ 个神经元传递过来的输入信号 $(x_1, x_2, ..., x_n)$
 
@@ -24,7 +24,7 @@
 
 典型的神经元激活函数
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529212313.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529212313.png" style="zoom: 50%;" />
 
 
 
@@ -45,13 +45,13 @@
 
 - **深度神经网络**：至少含有三个隐含层 (deep neural network)
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529212809.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529212809.png" style="zoom:50%;" />
 
 > 深度意味着含有很多隐藏层
 
 多层网络的要素：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529213702.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529213702.png" style="zoom:50%;" />
 
 
 
@@ -107,7 +107,7 @@ $$
 $$
 \min_\theta C(\theta) \xrightarrow{\text{梯度下降}} \text{最佳网络参数 } \theta^*
 $$
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529215251.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529215251.png" style="zoom:50%;" />
 
 
 
@@ -125,7 +125,7 @@ $$
 <details>
     <summary>例子</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/image-20240530120908080.png" style="zoom:67%;" />
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/image-20240530120908080.png" style="zoom:67%;" />
     </p>
 </details>
 
@@ -136,9 +136,9 @@ $$
 
 改变权重 w0 本质上只改变了S形的“陡度”。**偏置(bias)** 可将激活函数向左或向右移动，这对于模型学习至关重要。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530122154.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530122154.png" style="zoom: 67%;" />
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530122434.png" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530122434.png" style="zoom: 33%;" />
 
 
 
@@ -163,7 +163,7 @@ $$
   \text{ReLU}(x) = \max(x, 0)
   $$
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530122039.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530122039.png" style="zoom:67%;" />
 
 ### 为什么使用非线性激活函数？
 
@@ -193,7 +193,7 @@ $$
 
 ## I. 记号定义
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529215701.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529215701.png" style="zoom:67%;" />
 
 ### 层与层之间输出关系：$\mathbf{a}$ - $\mathbf{z}$
 
@@ -205,7 +205,7 @@ $$
 <details>
     <summary>推导</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529215945.png" style="zoom:67%;" />
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529215945.png" style="zoom:67%;" />
     </p>
 </details>
 
@@ -229,7 +229,7 @@ $$
 
 ### 1 网络构造
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529221440.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529221440.png" style="zoom: 67%;" />
 
 $$ f : \mathbb{R}^N \rightarrow \mathbb{R}^M $$
 
@@ -262,7 +262,7 @@ $$
 
 梯度降方法迭代求网络参数 θ 算法：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529222351.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529222351.png" style="zoom:67%;" />
 
 $$
 (w_{ij}^l)^{k+1} = (w_{ij}^l)^k - \eta \frac{\partial C((w_{ij}^l)^k)}{\partial w_{ij}^l}
@@ -277,11 +277,11 @@ $$
     <summary>3个参数的简单情况</summary>
     <p>
         均方误差损失函数
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529222804.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529222804.png"/>
     </p>
     <p>
         更新第t次迭代的三个参数
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529222613.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529222613.png"/>
     </p>
 </details>
 
@@ -323,7 +323,7 @@ $$
 \Delta w \rightarrow \Delta x \rightarrow \Delta y \rightarrow \Delta z
 $$
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529223918.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529223918.png" style="zoom: 50%;" />
 
 #### 定义误差 $\delta_i^l$
 
@@ -349,13 +349,13 @@ $$
    <details>
        <summary>推导</summary>
        <p>
-           <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530111140.png" style="zoom:50%;" />
+           <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530111140.png" style="zoom:50%;" />
        </p>
    </details>
 
 2. 由 $\delta^{l+1}$ 计算 $\delta^l$
 
-   <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530110720.png" style="zoom:50%;" />
+   <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530110720.png" style="zoom:50%;" />
    $$
    \delta_i^l = \sigma'(z_i^l) \sum_k w_{ki}^{l+1} \delta_k^{l+1}
    $$
@@ -367,8 +367,8 @@ $$
    <details>
        <summary>推导</summary>
        <p>
-           <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530113912.png" style="zoom:50%;" />
-           <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530114011.png" style="zoom:50%;" />
+           <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530113912.png" style="zoom:50%;" />
+           <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530114011.png" style="zoom:50%;" />
        </p>
    </details>
 
@@ -397,7 +397,7 @@ $$
 
 #### 反向传播理解
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530115754.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530115754.png" style="zoom: 50%;" />
 
 
 #### 反向传播算法
@@ -416,15 +416,15 @@ $$
 
 ### a. 批量（batch）梯度降
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530120351.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530120351.png" style="zoom:67%;" />
 
 ### b. 随机梯度降（SGD)
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530120422.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530120422.png" style="zoom:67%;" />
 
 ### c. 小批量（Mini-batch）梯度降优化
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530120507.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530120507.png" style="zoom:67%;" />
 
 
 
@@ -440,7 +440,7 @@ $$
 
 **滤波**也称**卷积核**、**特征提取器**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530135015.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530135015.png" style="zoom:50%;" />
 
 ### 2 步幅 stride & 特征图 feature map
 
@@ -448,7 +448,7 @@ $$
 
 下图中的 **滤波核(Kernel)** 的移动步幅分别为1和2，可以观察到输出的 **特征图 (Feature map)** 大小也不同，虽然通常宽高上的步幅会设为相等，但我们也可以<u>通过不同的长宽步幅控制特征图 (Feature map)不同尺度的变化</u>。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530135212.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530135212.png" style="zoom: 67%;" />
 
 ### 3 填充 padding
 
@@ -456,11 +456,11 @@ $$
 
 下图为*3\*3*的卷积核，*stride* 为*1*，*padding* 也为*1*，可以发现输出的特征图与输入的图像拥有<u>相同的大小</u>。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530135525.png" style="zoom:40%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530135525.png" style="zoom:40%;" />
 
 #### 零加边/零填充 zero padding
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530135327.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530135327.png" style="zoom: 50%;" />
 
 ### 4 通道 channel
 
@@ -472,11 +472,11 @@ $$
 
 每一个<u>卷积核(滤波)的通道数</u>必须和<u>输入图像的通道数</u> **相同**。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530135923.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530135923.png" style="zoom: 50%;" />
 
 每次卷积操作后的<u>输出的通道数</u>和<u>滤波的个数</u> **相同**。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530140306.png" style="zoom:55%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530140306.png" style="zoom:55%;" />
 
 ### 5 池化 Pooling
 
@@ -488,9 +488,9 @@ $$
 
 将每个特征图划分为2x2(或3x3)大小的 **区域(可重叠)**, 然后再 **下采样**：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530140957.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530140957.png" style="zoom: 50%;" />
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530141037.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530141037.png" style="zoom: 50%;" />
 
 
 
@@ -532,12 +532,12 @@ $$
 
 下一层每一个神经元只关注上一层图像的**局部感受野**区域，即只把上一层的**局部感受野**作为下一层的输入。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530144124.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530144124.png" style="zoom: 67%;" />
 
 - 不同的神经元可具有**相同的感受野**
 - 不同的神经元的感受野可以**重叠**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530144009.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530144009.png" style="zoom:67%;" />
 
 ### 2 相同的模式出现在图像得不同区域
 
@@ -547,7 +547,7 @@ $$
 
 参数共享：不同感受野的两个不同神经元的权重和偏置共享。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530144357.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530144357.png" style="zoom:67%;" />
 
 ==注意：具有<u>相同感受野</u>的两个神经元**不会**共享参数。==
 
@@ -565,17 +565,17 @@ $$
 
 - 融合不同特征图通道间同一位置的信息并且**减小通道数**
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530145539.png" style="zoom: 67%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530145539.png" style="zoom: 67%;" />
 
   <u>如果我们增加**卷积核的数量**， 我们可以控制**输出的深度**。</u> 
 
   > 例如， 使用<u>2个卷积核</u> (每个深度为3)， 输出特征图的<u>深度为2</u>：
   >
-  > <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530145643.png" style="zoom:67%;" />
+  > <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530145643.png" style="zoom:67%;" />
 
 - 融合不同特征图通道间同一位置的信息并且**增加非线性**
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530145719.png" style="zoom:67%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530145719.png" style="zoom:67%;" />
 
   > 在上图中， 我们使用3个卷积核， 输入和输出数据立方体维度和通道数完全相同。 
   >
@@ -587,13 +587,13 @@ $$
 
   下图，利用1×1卷积先增加特征图的深度，再减小特征图的深度：
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530150847.png" style="zoom:50%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530150847.png" style="zoom:50%;" />
 
 ### 1×1 卷积作用效果
 
 
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530150159.png" style="zoom: 60%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530150159.png" style="zoom: 60%;" />
 
 - 若滤波的个数**大于**输入层的深度，那么会起到了**升通道数**的效果；
 - 若滤波的个数**小于**输入层的深度，那么就起到了**降通道数**的效果。
@@ -622,15 +622,15 @@ Pooling 的本质，其实是**采样**。Pooling 对于输入的特征图，选
       <summary>不变性详情</summary>
       <p>
           <b>平移不变性</b>
-          <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/image-20240530151800126.png" style="zoom:50%;" />
+          <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/image-20240530151800126.png" style="zoom:50%;" />
       </p>
       <p>
           <b>旋转不变性</b>
-          <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/image-20240530151830959.png" style="zoom:50%;" />
+          <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/image-20240530151830959.png" style="zoom:50%;" />
       </p>
       <p>
           <b>尺度不变性</b>
-          <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/image-20240530151843984.png" style="zoom:50%;" />
+          <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/image-20240530151843984.png" style="zoom:50%;" />
       </p>
   </details>
 
@@ -647,7 +647,7 @@ Pooling 的本质，其实是**采样**。Pooling 对于输入的特征图，选
 - 全连接可写成矩阵乘法，相当于一个**特征空间变换**，可以把有用的**信息提取整合**。再加上激活函数的非线性映射，多层全连接层理论上可以模拟任何**非线性变换**。
 - 全连接层鉴别与高层特征最相关的类别，最终其权重用于得到不同类别的正确**概率**。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530152356.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530152356.png"/>
 
 
 
@@ -674,7 +674,7 @@ Pooling 的本质，其实是**采样**。Pooling 对于输入的特征图，选
 - 对于非线性函数而言，ReLU 由于非负区间的梯度为常数，因此**不存在梯度消失问题 (Vanishing Gradient Problem)**，使得模型的收敛速度维持在一个稳定状态。ReLU 的梯度大多数情况下是常数，有助于解决深层网络的收敛问题。ReLU 线性部分功能很好的传播梯度，而<u>置 0 部分本身就是为了稀疏性而牺牲梯度</u>。
 
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530152604.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530152604.png" style="zoom:50%;" />
 
 ## VIII. CNN感受野
 
@@ -725,7 +725,7 @@ Pooling 的本质，其实是**采样**。Pooling 对于输入的特征图，选
 
 卷积层有参数，池化层无参数。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530203422.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530203422.png" style="zoom:67%;" />
 
 - 网络权重参数量（仅权重）：
   $$
@@ -780,7 +780,7 @@ $$
 
 $N_{in}$ 表示输入层神经元个数，$N_{out}$ 表示输出层神经元个数。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530211641.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530211641.png" style="zoom:50%;" />
 
 单层全连接层的网络模型**参数量**（权重+偏置）： 
 $$
@@ -806,7 +806,7 @@ $$
 
 5个卷积层 + 3个全连接层
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530212618.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530212618.png" style="zoom: 67%;" />
 
 ### 2 AlexNet 网络架构细节
 
@@ -862,7 +862,7 @@ $$
 
 ## III. ZFNet
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530214805.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530214805.png"/>
 
 ### 网络设计思想
 
@@ -887,7 +887,7 @@ $$
 
 ### VGG16 结构图
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530215209.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530215209.png" style="zoom:50%;" />
 
 ### VGGNet网络架构流程描述
 
@@ -922,7 +922,7 @@ $$
 
 三次连续3×3卷积的效果等价于一次7×7卷积：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530215546.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530215546.png" style="zoom:50%;" />
 
 #### 多个3×3卷积层堆叠的优势
 
@@ -945,19 +945,19 @@ Inception的含义：引入 Inception module 使得网络**深度(depth)更深**
 
 具有不同感受野大小和操作的并行路径旨在堆积的特征图中捕获稀疏相关模式
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530220238.png" style="zoom: 25%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530220238.png" style="zoom: 25%;" />
 
 #### 改进版本
 
 在高计算代价的卷积之前，**使用1x1卷积降低通道维数**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530220327.png" style="zoom:25%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530220327.png" style="zoom:25%;" />
 
 通过多个大小的卷积核提取图像不同尺度的信息，最后进行融合(通道拼接)，以得到图像更好的表征。
 
 **池化部分加边**：使得池化后保持特征图的高和宽与输入**保持不变**。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530220755.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530220755.png" style="zoom: 67%;" />
 
 ### 2 Inception 模块架构
 
@@ -972,7 +972,7 @@ Inception的含义：引入 Inception module 使得网络**深度(depth)更深**
 
 左图为原方案，有图为加入瓶颈层的Inception。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530221258.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530221258.png" style="zoom:67%;" />
 
 - 应用上述左端架构的问题是浮点**计算代价高**。
 
@@ -982,7 +982,7 @@ Inception的含义：引入 Inception module 使得网络**深度(depth)更深**
 
 - 引入瓶颈层后的乘法浮点计算量：
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530221941.png" style="zoom:40%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530221941.png" style="zoom:40%;" />
 
   $(1 *1 * 192)*(28*28 *16) + (5*5*16)*(28*28*32)= 1240万$
 
@@ -990,7 +990,7 @@ Inception的含义：引入 Inception module 使得网络**深度(depth)更深**
 
 ### 4 GoogLeNet 架构
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530221838.png" style="zoom: 40%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530221838.png" style="zoom: 40%;" />
 
 
 
@@ -998,7 +998,7 @@ Inception的含义：引入 Inception module 使得网络**深度(depth)更深**
 
 ### 1 残差网络原理
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530222412.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530222412.png" style="zoom: 67%;" />
 
 - **跳转连接**是跳过一层或多层的连接。在我们的情况下，跳转连接仅执行恒等映射，并将它们的输出添加到堆叠层的输出中。
 
@@ -1033,7 +1033,7 @@ $$
 
 ### 3 ResNet结构
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240530223743.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240530223743.png" style="zoom: 67%;" />
 
 
 

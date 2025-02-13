@@ -66,11 +66,11 @@
   - 需要使用此视图来描述系统应该执行的操作。 所有其他视图都依靠用例视图（场景）来指导它们，这就是将模型称为4 + 1的原因。
   - 该视图通常包含用<u>*例图，描述和概述图*</u>。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612171457.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612171457.png" style="zoom:67%;" />
 
 ### UML
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173651.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173651.png" style="zoom: 50%;" />
 
 
 
@@ -79,78 +79,78 @@
 用例是帮助**理解系统功能需求**的宝贵工具，是系统提供的功能的描述。
 用例代表了**系统的外部视图**，不要期望用例与系统内部的类之间存在任何关联。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612172928.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612172928.png" style="zoom:80%;" />
 
 #### 类图 Class Diagram
 
 类图表示系统中的类和类与类之间的关系，它是对**系统静态结构**的描述。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173151.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173151.png" style="zoom:67%;" />
 
 #### 对象图 Object Diagram
 
 对象图是某个时间点系统中对象的快照，因为它显示的是实例而不是类，所以通常称为**实例图**。
 对象图对于**显示连接在一起的对象的示例**很有用。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173351.png" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173501.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173351.png" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173501.png" style="zoom:80%;" />
 
 #### 状态图 State Diagram
 
 状态图是描述类的对象所有可能的**状态**以及事件发生时**状态的转移条件**。通常，状态图是<u>对类图的补充</u>。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173450.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173450.png" style="zoom:67%;" />
 
 #### 协作（通信）图 Communication Diagram
 
 协作图是一种交互图，强调的是**发送和接收消息的对象之间的组织结构**。
 一个协作图显示了一系列的对象及对象之间的**联系**以及对象间发送和接收的**消息**。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173823.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173823.png" style="zoom:67%;" />
 
 #### 序列图 Sequence Diagram
 
 软件工程中，序列图是**对象交互**的一种表现方式。主要用于按照交互发生的一系列顺序，显示对象之间的这些交互。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612173938.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612173938.png" style="zoom:80%;" />
 
 #### 活动图 Activity Diagram
 
 描述**满足用例要求**所要进行的**活动**以及**活动间**的**约束关系**，有利于识别**并行活动**。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174004.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174004.png" style="zoom: 67%;" />
 
 #### 包图 Package Diagram
 
 包是在UML中用类似于文件夹的符号表示的**模型元素的组合**，允许从UML中获取任何结构，并将其元素分组到更高级别的单元中。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174052.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174052.png" style="zoom:80%;" />
 
 #### 组件图 Component Diagram
 
 组件图描述**代码构件**的**物理结构**及**各构件之间**的**依赖关系**。将系统划分为组件并希望通过接口或组件细分为较低级别的结构来显示其相互关系。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174233.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174233.png" style="zoom:67%;" />
 
 #### 部署图 Deployment Diagram
 
 部署图定义系统中**软硬件的物理体系结构**。描述了一个运行时的硬件结点，以及在这些结点上运行的软件组件的静态视图。 显示了系统的硬件，安装在硬件上的软件，以及用于连接异构的机器之间的中间件。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174227.png" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174227.png" style="zoom: 80%;" />
 
 #### 复合结构 Composite Structures
 
 复合结构是UML 2的新增功能。即能够分层地将类**分解为内部结构**。这可以将一个复杂的对象**分解**为多个部分。
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174404.png" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174417.png" style="zoom:67%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174404.png" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174417.png" style="zoom:67%;" />
 
 #### 交互概述图 Interaction Diagram
 
 交互概述图是**活动图和序列图的结合**。 可以将其视为活动图，其中将活动替换为小的顺序图，或者将其视为用活动图表示法分解以显示控制流的顺序图。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174517.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174517.png" style="zoom:80%;" />
 
 #### 时序图 Timing Diagram
 
 时序图是交互图的另一种形式，其中重点在于**时序约束**。一般针对单个对象或多个对象描述。对显示不同对象的状态变化之间的时序约束很有用。  
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174638.png" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240612174654.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174638.png" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240612174654.png" style="zoom:80%;" />

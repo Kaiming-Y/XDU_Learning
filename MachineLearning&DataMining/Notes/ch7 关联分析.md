@@ -21,7 +21,7 @@
 
 **例子**：购物篮问题
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531205918.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531205918.png" style="zoom:50%;" />
 
 - **项** (item): 购物篮中的每一个商品
 - **项集** (itemset): 购物篮中多个项组成的集合
@@ -79,7 +79,7 @@ $$
 
 例子：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531211736.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531211736.png" style="zoom:50%;" />
 
 
 
@@ -135,7 +135,7 @@ $$
 
 **格结构**（用来枚举所有可能的项集）：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240531224741.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240531224741.png" style="zoom:50%;" />
 
 ### 降低产生频繁项集计算复杂度的方法
 
@@ -161,7 +161,7 @@ $$
 
 如果 B 是非频繁项集, 那么包含B的项集(超集)都是非频繁的。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601142933.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601142933.png" style="zoom:50%;" />
 
 **Apriori 算法采用的候选集生成策略**
 
@@ -183,7 +183,7 @@ $$
 
 #### d. Apriori算法伪代码
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601144342.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601144342.png" style="zoom: 50%;" />
 
 #### e. 算法总结
 
@@ -201,11 +201,11 @@ $$
 
 **生成频繁项集过程**：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601145359.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601145359.png" style="zoom:50%;" />
 
 **最终所有频繁项集**：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601145539.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601145539.png" style="zoom:50%;" />
 
 - $\{1, 3\}$ 产生规则：
   - ==$1 \rightarrow 3$ (sup = 2/4 = 50%, conf = 2/2 = 100%)==
@@ -259,7 +259,7 @@ $$
 
 **例子**：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601153221.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601153221.png" style="zoom:50%;" />
 
 
 
@@ -275,7 +275,7 @@ $$
 
 序列支持度的例子：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601154414.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601154414.png" style="zoom:50%;" />
 
 
 
@@ -293,7 +293,7 @@ $$
 
 ### 算法伪代码
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601155343.png" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601155343.png" style="zoom: 33%;" />
 
 
 
@@ -316,15 +316,15 @@ $$
 
 当且仅当通过**丢弃s1中的第一项**获得的子序列与通过**丢弃s2中的最后一项**而获得的子序列相同时，序列s1与另一序列s2合并。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601161146.png" style="zoom:60%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601161146.png" style="zoom:60%;" />
 
 **序列合并过程**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601161821.png" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601161821.png" style="zoom: 33%;" />
 
 例子：
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240601161250.png" style="zoom: 40%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240601161250.png" style="zoom: 40%;" />
 
 ### 候选序列生成的例子
 

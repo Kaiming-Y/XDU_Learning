@@ -22,7 +22,7 @@
 
 **<u>软件体系结构风格 = 组件/连接件集 + 拓扑 + 约束</u>**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610145218.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610145218.png" style="zoom:67%;" />
 
 
 
@@ -41,11 +41,11 @@
 >
 >   - **组件**：数据处理
 >
->     <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610151701.png" style="zoom:50%;" />
+>     <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610151701.png" style="zoom:50%;" />
 >
 >   - **连接件**：数据流
 >
->     <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610151732.png" style="zoom:50%;" />
+>     <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610151732.png" style="zoom:50%;" />
 >
 > 3. 补充：<u>数据不是自由流动的</u>
 >    - 近似线性数据流
@@ -55,7 +55,7 @@
 
 ### i. 批处理风格 Batch Sequential
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610150928.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610150928.png" style="zoom:67%;" />
 
 #### 定义
 
@@ -89,7 +89,7 @@
 
 ### ii. 管道-过滤器风格 Pipes and Filters
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610154435.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610154435.png" style="zoom:50%;" />
 
 #### 定义
 
@@ -161,7 +161,7 @@
 
 ### i. 主程序/子程序风格 Main Program and Subroutines
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610172031.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610172031.png" style="zoom:50%;" />
 
 #### 定义
 
@@ -188,7 +188,7 @@
 
 ### ii. 面向对象风格 Object Oriented
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610174113.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610174113.png" style="zoom:50%;" />
 
 #### 定义
 
@@ -230,7 +230,7 @@
 
 ### iii. 层次风格 Layered
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610203520.png"  />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610203520.png"  />
 
 #### 定义
 
@@ -265,7 +265,7 @@
 
 ### iv. 客户端/服务器风格 Client/Server
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610205338.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610205338.png" style="zoom:50%;" />
 
 #### 两层C/S结构
 
@@ -322,7 +322,7 @@
 
 ### i. 仓库风格 Repository
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610214333.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610214333.png" style="zoom:50%;" />
 
 #### 定义
 
@@ -357,7 +357,7 @@
 
 ### ii. 黑板风格 Blackboard
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610215554.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610215554.png" style="zoom:50%;" />
 
 #### 定义
 
@@ -385,11 +385,11 @@
     - 用来控制和协调**所有的知识源**，使其**协同的解决问题**
     - 了解各个知识源的能力，**实时决策解决问题的步骤**
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240610220023.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240610220023.png" style="zoom:50%;" />
 
 - **连接件**：调用、访问
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611124303.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611124303.png" style="zoom:50%;" />
 
 #### 适用场景
 
@@ -424,7 +424,7 @@
 
 ### i. 解释器风格 Interpreter
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611141639.png"/>
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611141639.png"/>
 
 #### 定义
 
@@ -458,7 +458,7 @@
 
 ### ii. 规则系统风格 Rule-based System
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611142844.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611142844.png" style="zoom:67%;" />
 
 #### 定义
 
@@ -510,7 +510,7 @@ Drools
 
 ### i. 进程通信风格 Communicating Processes
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611152422.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611152422.png" style="zoom: 67%;" />
 
 #### 定义
 
@@ -530,7 +530,7 @@ Drools
 
 ### ii. 事件系统风格 - 隐式调用 Event System - Implicit Invocation
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611173549.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611173549.png" style="zoom:50%;" />
 
 #### 定义
 
@@ -565,7 +565,7 @@ Drools
 
 ### 事件系统派遣机制 - 调度机制
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611215112.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611215112.png" style="zoom: 50%;" />
 
 #### 1 无独立调度模块的事件系统 - 被观察者/观察者模式
 
@@ -590,13 +590,13 @@ Drools
 
   - 消息只能够被唯一的消费者所消费，消费之后即从队列中删除
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611215505.png" style="zoom: 33%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611215505.png" style="zoom: 33%;" />
 
 - **发布-订阅模式**
 
   - 一个事件可以被多个订阅者消费
 
-  <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240611215604.png" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240611215604.png" style="zoom:33%;" />
 
 
 

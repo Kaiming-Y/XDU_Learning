@@ -46,7 +46,7 @@
 
 ### 4 机器学习的基本处理流程
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240526173651.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240526173651.png" style="zoom: 50%;" />
 
 
 
@@ -96,7 +96,7 @@
 
 ### 2 数据挖掘基本流程
 
-![](https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240526230120.png)
+![](https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240526230120.png)
 
 
 

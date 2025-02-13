@@ -198,7 +198,7 @@ $$
 <details>
     <summary>例题</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527202205.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527202205.png"/>
     </p>
 </details>
 
@@ -280,7 +280,7 @@ $$
 <details>
     <summary>例子</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527204818.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527204818.png"/>
     </p>
 </details>
 
@@ -322,7 +322,7 @@ $$
 <details>
     <summary>证明</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527210101.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527210101.png"/>
     </p>
 </details>
 
@@ -337,12 +337,12 @@ $$
 <details>
     <summary><b>多元链式法则和张量导数的例子</b></summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527210757.png"/>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527210820.png"/>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527211007.png"/>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527211100.png"/>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527211117.png"/>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527211130.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527210757.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527210820.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527211007.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527211100.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527211117.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527211130.png"/>
     </p>
 </details>
 
@@ -405,14 +405,14 @@ $$
 
 <details>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527213002.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527213002.png"/>
     </p>
 </details>
 ==特征类型的本质区别是其所对应的**操作**不同==
 
 <details>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527213747.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527213747.png"/>
     </p>
 </details>
 
@@ -458,7 +458,7 @@ $$
 
 <details>
     <summary>简单属性（单一特征）的相似度与相异度</summary>
-    <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527215233.png"/>
+    <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527215233.png"/>
 </details>
 
 ### 2 距离
@@ -527,7 +527,7 @@ $$
 <details>
     <summary>例子</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527221026.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527221026.png"/>
     </p>
 </details>
 
@@ -557,7 +557,7 @@ $$
 <details>
     <summary>例子</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527221443.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527221443.png"/>
     </p>
 </details>
 
@@ -599,7 +599,7 @@ $$
 <details>
     <summary>例题</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240527223255.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240527223255.png"/>
     </p>
 </details>
 
@@ -730,7 +730,7 @@ $\mu$ 是总体的均值，$\sigma$ 是总体的标准差。
 <details>
     <summary>标准化方法</summary>
     <p>
-        <img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240528135411.png"/>
+        <img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240528135411.png"/>
     </p>
 </details>
 

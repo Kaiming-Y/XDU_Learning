@@ -196,7 +196,7 @@ $$
 - 若令 $\ln y = w^T x + b$，则得<u>对数线性回归</u>
 - 实际是在用 $e^{w^T x + b}$ 逼近 $y$
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240528165924.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240528165924.png" style="zoom:50%;" />
 
 
 
@@ -240,7 +240,7 @@ y = \frac{1}{1 + e^{-z}}
 $$
 将 $z$ 转化为一个接近 0 或 1 的 $y$ 值。对数几率函数定义域 $(-∞, +∞)$, 值域 $(0, 1)$。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240528215629.png" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240528215629.png" style="zoom: 33%;" />
 
 - **几率(odds)定义**：几率是指该事件发生的概率与该事件不发生的概率的比值。如果事件发生概率是 $p$，那么该事件的几率为 $\dfrac{p}{1-p}$。
   - 当几率大于 $1$ 时，说明该事件发生的概率大；
@@ -397,7 +397,7 @@ $$
 - 初始点：可以人为的设定，也可以随机设定。初始点选取影响全局收敛性。需要考虑全局收敛性，最好是多设几个初始值迭代。
 - 初始点离最优点越近，收敛越快。
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529163143.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529163143.png" style="zoom: 50%;" />
 
 
 
@@ -409,7 +409,7 @@ $$
 
 *“投影后类内方差小，类间距离大”*
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529171320.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529171320.png" style="zoom:50%;" />
 
 我们将这个最佳的投影向量称为 $w$，那么样例 $x$ 到方向向量 $w$ 上的投影可以用下式来计算：
 $$
@@ -547,7 +547,7 @@ $$
 
 第二类采样数据 $ \omega_2 $ ： $\mathbf{X_2} = (\mathbf{x_1}, \mathbf{x_2}) = \{(9,10), (6,8), (9,5), (8,7), (10,8)\} \quad$
 
-<img src="https://raw.githubusercontent.com/abecedarian007/picgo_images/master/img/20240529203718.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Kaiming-Y/picgo_images/master/img/20240529203718.png" style="zoom:50%;" />
 
 #### 解
 
